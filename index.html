@@ -1,0 +1,29 @@
+---
+layout: default
+---
+
+<div class="content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="content">
+                        <h4 style="margin-top:0;">Last Scan: 2 days ago</h4>
+                        <button
+                            class="btn btn-primary"
+                            onclick="demo.showNotification('top','right')"
+                            style="cursor:pointer;"
+                        >
+                            <i class="fa fa-eye"></i>
+
+                            SCAN NETWORK
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12">
+                {% include widgets/device-list.html %}
+            </div>
+        </div>
+    </div>
+</div>

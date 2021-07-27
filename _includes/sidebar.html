@@ -1,0 +1,58 @@
+<div
+    class="sidebar"
+    data-color="blue"
+    data-image="https://images.unsplash.com/photo-1527066579998-dbbae57f45ce?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1532&q=80"
+>
+    <!--
+
+        Tip 1: you can change the color of the sidebar using: data-color="blue | azure | green | orange | red | purple"
+        Tip 2: you can also add an image using data-image tag
+
+    -->
+
+    <div class="sidebar-wrapper">
+        <div class="logo">
+            <a href="#" class="simple-text">
+                SOTERIA
+            </a>
+        </div>
+
+        <ul class="nav">
+            {% if page.active == "dashboard" %}
+            <li class="active">
+                <a href="/">
+                    <i class="pe-7s-note2"></i>
+                    <p>Dashboard</p>
+                </a>
+            </li>
+            {% else %}
+            <li>
+                <a href="/">
+                    <i class="pe-7s-note2"></i>
+                    <p>Dashboard</p>
+                </a>
+            </li>
+            {% endif %} {% if include.active == 'user' %}
+            <li class="active">
+                <a href="/user.html">
+                    <i class="pe-7s-user"></i>
+                    <p>Account</p>
+                </a>
+            </li>
+            {% else %}
+            <li>
+                <a href="/user.html">
+                    <i class="pe-7s-user"></i>
+                    <p>Account</p>
+                </a>
+            </li>
+            {% endif %}
+            <li class="active-pro">
+                <a href="#">
+                    <i class="pe-7s-rocket"></i>
+                    <p>Upgrade Account</p>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>

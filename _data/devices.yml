@@ -1,0 +1,33 @@
+attributes:
+    - value: name
+      label: Name
+    - value: pstrength
+      label: Password Strength
+device_list:
+    - name: Augusta Smart Lock
+      pstrength: OK
+      url: augusta
+    - name: Nest Thermostat
+      pstrength: Good
+      url: nest
+    - name: Logitech Pop Smart Button Controller
+      pstrength: Ok
+      url: logitech
+    - name: Philips Hue Light 1
+      pstrength: Good
+      url: philips
+    - name: Philips Hue Light 2
+      pstrength: Good
+      url: philips
+    - name: Philips Hue Light 3
+      pstrength: Default
+      url: philips
+    - name: Philips Hue Light 4
+      pstrength: Good
+      url: philips
+    - name: Philips Hue Light 5
+      pstrength: Good
+      url: philips
+    - name: Philips Hue Light 6
+      pstrength: Good
+      url: philips

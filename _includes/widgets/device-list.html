@@ -1,0 +1,30 @@
+<div class="card">
+    <div class="header">
+        <h4 class="title">Device List</h4>
+        <p class="category">All the devices connected to your network</p>
+    </div>
+    <div class="content table-responsive table-full-width">
+        <table class="table table-hover table-striped">
+            <thead>
+                {% for attr in site.data.devices.attributes %}
+                <th>{{ attr.label }}</th>
+                {% endfor %}
+                <th>Manage</th>
+            </thead>
+            <tbody>
+                {% for device in site.data.devices.device_list %}
+                <tr>
+                    {% for attr in site.data.devices.attributes %}
+                    <td>{{ device[attr.value] }}</td>
+                    {% endfor %}
+                    <td>
+                        <a href="/{{ device.url }}.html" style="color:black;">
+                            <i class="pe-7s-back-2" style="cursor:pointer;font-size:20px"></i
+                        ></a>
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</div>

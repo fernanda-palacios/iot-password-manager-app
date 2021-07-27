@@ -1,0 +1,35 @@
+<div class="card card-user">
+    <div class="image">
+        <img
+            src="https://images.unsplash.com/photo-1519933045055-2e2d61a64bcf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"
+            alt="..."
+        />
+    </div>
+    <div class="content">
+        <div class="author">
+            <!-- <i class="pe-7s-box2" /> -->
+            {% if include.deviceName == "Augusta Smart Lock" %}
+            <img
+                class="avatar border-gray"
+                src="https://cnet2.cbsistatic.com/img/uWzsb6jC98GADxQphyzMvdSwm4g=/1600x900/2016/04/27/80aeb603-cc73-4342-9692-2a6cff958ae4/augustsmartlock2ndgenproductphotos-3.jpg"
+                alt="..."
+            />
+            {% else %}
+            <img
+                class="avatar border-gray"
+                src="https://images.unsplash.com/photo-1545259741-2ea3ebf61fa3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"
+                alt="..."
+            />
+            {% endif %}
+            <h4 class="title">{{ include.deviceName }}<br /></h4>
+        </div>
+        <div style="margin-top:40px;">
+            {% if include.deviceName == "Augusta Smart Lock" %}
+            <h5><b>Vulnerability has been detected!</b></h5>
+            <button class="btn btn-danger">Click here to protect device</button>
+            <hr style="margin-top:30px;margin-bottom:30px;" />
+            {% endif %}
+            <h5>Online since: February 14th, 2018</h5>
+        </div>
+    </div>
+</div>
