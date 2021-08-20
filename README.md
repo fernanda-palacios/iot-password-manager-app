@@ -1,4 +1,4 @@
-# Soteria Web Application
+# Soteria (IoT Password Manager) Web Application
 
 ## Development
 
